@@ -1,0 +1,9 @@
+- df = load BankNote_Authentication.csv
+- features = everything except for df["class"], target = df["class"]
+- for i = 1..5
+  - print("Experiment " + i)
+  - training_features, test_features, training_targets, test_targets = train_test_split(25% testing, 75% training)
+  - tree = DecisionTree.fit(training_features, training_targets)
+  - size = no_nodes(tree)
+  - accuracy = calculate_accuracy(tree, test_features, test_targets)
+  - print("Tree size: " + size + ", accuracy: " + accuracy)
